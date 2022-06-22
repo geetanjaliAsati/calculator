@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+ <body>
+    <div>
+      <input type="number" id="num1" placeholder="Enter Number 1">
+        <select name="operator" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="num2" placeholder="Enter Number 2">
+      <input type="button" value="=" onclick = 'calculate()'>
+      <h1 id="result"></h1>
+      <input type="button" value="Change Text" onclick = "changeTextOfDivTag()">
+      <div class="division">Hello</div>
+        <div class="division">Welcome to the Calculator !</div>
+        <div class="division"> 1. Select the number in first text</div>
+        <div class="division"> 2.  Choose the operator <br> 3. Select the number in second text</div>
+        <div class="division"> Done !</div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
